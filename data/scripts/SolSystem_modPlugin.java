@@ -26,8 +26,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			"sol",
 			"star_yellow",
 			1000,
-			-400,
-			-9400,
+			-8000,
+			-4500,
 			500);
 
 		//Buoy
