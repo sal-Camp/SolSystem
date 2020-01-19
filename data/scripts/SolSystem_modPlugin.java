@@ -2,10 +2,7 @@ package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.PlanetAPI;
-import com.fs.starfarer.api.campaign.SectorAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.StarSystemAPI;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
@@ -111,6 +108,12 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		system.addAsteroidBelt(star, 1000, 6000, 500, 150, 300, Terrain.ASTEROID_BELT, "Asteroid Belt");
 		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 4, Color.white,256f,6000,295f,null,null);
 
+		//Asteroid Belt Jump Point
+		JumpPointAPI asteroid_belt_jump_point = Global.getFactory().createJumpPoint("sol_jump", "Sol Jump-Point");
+		asteroid_belt_jump_point.setCircularOrbit(system.getEntityById("sol"), 245, 7000, 200);
+		asteroid_belt_jump_point.setStandardWormholeToHyperspaceVisual();
+		system.addEntity(asteroid_belt_jump_point);
+
 		//Jupiter
 		PlanetAPI jupiter = system.addPlanet("jupiter", star, "Jupiter", "gas_giant", 30, 500, 8800, 800);
 		MarketAPI jupiter_market = Global.getFactory().createMarket("jupiter_market", jupiter.getName(), 0);
@@ -173,6 +176,6 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		system.addRingBand(star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 25000, 305f, null,null);
 		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white,256f,25000,295f,null,null);
 
-		system.autogenerateHyperspaceJumpPoints(true, true);
+		system.autogenerateHyperspaceJumpPoints(true,true);
     }
 }
