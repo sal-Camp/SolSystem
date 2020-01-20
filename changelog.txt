@@ -1,0 +1,3 @@
+Version 0.1.1 - 01/19/2020
+- Fixed null crash by removing all preset planetary conditions. The entire system now has random conditions.
+- Changed system position to (8500,-10500)
