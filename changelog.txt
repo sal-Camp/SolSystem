@@ -1,3 +1,6 @@
+Version 0.2.1 - 01/21/2020
+- Removed doubled organic condition from Titan
+
 Version 0.2.0 - 01/21/2020
 - Added back preset planetary conditions to most planets (without the crash)
 - Made preset planetary conditions toggleable within the mod file

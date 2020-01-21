@@ -230,7 +230,6 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 				// Europa Conditions 200 Hazard Rating
 				MarketAPI europa_market = Global.getFactory().createMarket("europa_market", europa.getName(), 0);
 				europa_market.setPlanetConditionMarketOnly(true);
-				europa_market.addCondition(Conditions.ORGANICS_PLENTIFUL);
 				europa_market.addCondition(Conditions.VOLATILES_PLENTIFUL);
 				europa_market.addCondition(Conditions.ORGANICS_ABUNDANT);
 				europa_market.addCondition(Conditions.THIN_ATMOSPHERE);
