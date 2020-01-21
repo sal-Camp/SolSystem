@@ -1,3 +1,10 @@
+Version 0.2.0 - 01/21/2020
+- Added back preset planetary conditions to most planets (without the crash)
+- Made preset planetary conditions toggleable within the mod file
+- Added Ceres
+- Changed Venus from rocky_metallic to lava due to its volcanic nature
+- Changed Titan from frozen to rocky_ice. Such a hard planet to classify.
+
 Version 0.1.1 - 01/19/2020
 - Fixed null crash by removing all preset planetary conditions. The entire system now has random conditions.
 - Changed system position to (8500,-10500)
