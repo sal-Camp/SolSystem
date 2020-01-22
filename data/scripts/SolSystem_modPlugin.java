@@ -82,7 +82,7 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "desert", 0, 80, 5000, 500);
 
 		// Asteroid Belt
-		system.addAsteroidBelt(star, 1000, 6000, 500, 700, 300, Terrain.ASTEROID_BELT, "Asteroid Belt");
+		system.addAsteroidBelt(star, 750, 6000, 500, 700, 300, Terrain.ASTEROID_BELT, "Asteroid Belt");
 		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 4, Color.white,256f,6000,295f,Terrain.ASTEROID_BELT,"Asteroid Belt1");
 
 		// Ceres
@@ -150,7 +150,7 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			system.addRingBand(neptune, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 500, 45, Terrain.RING, "Neptune's Belt");
 
 		// Kuiper Belt
-		system.addAsteroidBelt(star, 5000, 25000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Kuiper Belt");
+		system.addAsteroidBelt(star, 1000, 25000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Kuiper Belt");
 		system.addRingBand(star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 25000, 305f, Terrain.ASTEROID_BELT,"Kuiper Belt1");
 		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white,256f,25000,295f,Terrain.ASTEROID_BELT,"Kuiper Belt2");
 
