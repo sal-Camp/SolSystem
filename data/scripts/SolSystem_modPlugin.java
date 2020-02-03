@@ -68,18 +68,26 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Mercury
 		PlanetAPI mercury = system.addPlanet("mercury", star, "Mercury", "rocky_metallic", 0, 60, 1500, 88);
+		mercury.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_mercury"));
+		mercury.applySpecChanges();
 
 		// Venus
 		PlanetAPI venus = system.addPlanet("venus", star, "Venus", "lava", 0, 140, 2200, 225);
+		venus.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_venus"));
+		venus.applySpecChanges();
 
 		// Terra
 		PlanetAPI terra = system.addPlanet("terra", star, "Terra", "terran", 0, 180, 3400, 365);
+		terra.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_terra"));
+		terra.applySpecChanges();
 
 			// Luna
 			PlanetAPI luna = system.addPlanet("luna", terra, "Luna","barren", 0,40, 350, 30);
 
 		// Mars
 		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "desert", 0, 80, 5000, 500);
+		mars.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_mars"));
+		mars.applySpecChanges();
 
 		// Asteroid Belt
 		system.addAsteroidBelt(star, 750, 6000, 500, 700, 300, Terrain.ASTEROID_BELT, "Asteroid Belt");
@@ -96,6 +104,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Jupiter
 		PlanetAPI jupiter = system.addPlanet("jupiter", star, "Jupiter", "gas_giant", 30, 500, 8800, 800);
+		jupiter.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_jupiter"));
+		jupiter.applySpecChanges();
 
 			// Io
 			PlanetAPI io = system.addPlanet("io", jupiter, "Io", "lava", 120,50, 625, 45);
@@ -111,6 +121,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Saturn
 		PlanetAPI saturn = system.addPlanet("saturn", star, "Saturn", "gas_giant", 180, 425, 13000, 1200);
+		saturn.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_saturn"));
+		saturn.applySpecChanges();
 
 			// Enceladus
 			PlanetAPI enceladus = system.addPlanet("enceladus", saturn, "Enceladus", "cryovolcanic", 180, 10, 475, 30);
@@ -129,6 +141,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Uranus
 		PlanetAPI uranus = system.addPlanet("uranus", star, "Uranus", "ice_giant", 90, 350, 17000, 1500);
+		uranus.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_uranus"));
+		uranus.applySpecChanges();
 
 			// Oberon
 			PlanetAPI oberon = system.addPlanet("oberon", uranus, "Oberon", "rocky_ice", 0, 40, 900, 60);
@@ -138,10 +152,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Neptune
 		PlanetAPI neptune = system.addPlanet("neptune", star, "Neptune", "ice_giant", 270, 340, 21000, 1800);
-		//PlanetSpecAPI neptuneSpec = neptune.getSpec();
-		//neptuneSpec.setTexture("../mods/SolSystem/graphics/planets/planet_textureBlueGiant.jpg");
-		//neptune.getSpec().setTexture("graphics/planets/planet_textureBlueGiant.jpg");
-		//neptune.applySpecChanges();
+		neptune.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_neptune"));
+		neptune.applySpecChanges();
 
 			// Triton
 			PlanetAPI triton = system.addPlanet("triton", neptune, "Triton", "cryovolcanic", 0, 50, 900, 60);

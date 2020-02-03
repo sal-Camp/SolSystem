@@ -1,0 +1,14 @@
+{
+  "graphics":{
+    "planets":{
+      "ssmod_mercury":"graphics/planets/ssmod_mercury.jpg",
+      "ssmod_venus":"graphics/planets/ssmod_venus.jpg",
+      "ssmod_terra":"graphics/planets/ssmod_terra.jpg",
+      "ssmod_mars":"graphics/planets/ssmod_mars.jpg",
+      "ssmod_jupiter":"graphics/planets/ssmod_jupiter.jpg",
+      "ssmod_saturn":"graphics/planets/ssmod_saturn.jpg",
+      "ssmod_uranus":"graphics/planets/ssmod_uranus.jpg",
+      "ssmod_neptune":"graphics/planets/ssmod_neptune.jpg"
+    }
+  }
+}
