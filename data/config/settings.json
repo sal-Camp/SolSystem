@@ -4,9 +4,11 @@
       "ssmod_mercury":"graphics/planets/ssmod_mercury.jpg",
       "ssmod_venus":"graphics/planets/ssmod_venus.jpg",
       "ssmod_terra":"graphics/planets/ssmod_terra.jpg",
+      "ssmod_terra_clouds": "graphics/planets/ssmod_terra_clouds.jpg",
       "ssmod_mars":"graphics/planets/ssmod_mars.jpg",
       "ssmod_jupiter":"graphics/planets/ssmod_jupiter.jpg",
       "ssmod_saturn":"graphics/planets/ssmod_saturn.jpg",
+      "ssmod_saturn_belt":"graphics/planets/ssmod_saturn_belt.png",
       "ssmod_uranus":"graphics/planets/ssmod_uranus.jpg",
       "ssmod_neptune":"graphics/planets/ssmod_neptune.jpg"
     }

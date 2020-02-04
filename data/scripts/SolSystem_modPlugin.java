@@ -72,20 +72,22 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		mercury.applySpecChanges();
 
 		// Venus
-		PlanetAPI venus = system.addPlanet("venus", star, "Venus", "lava", 0, 140, 2200, 225);
+		PlanetAPI venus = system.addPlanet("venus", star, "Venus", "toxic", 0, 140, 2200, 225);
 		venus.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_venus"));
 		venus.applySpecChanges();
 
 		// Terra
 		PlanetAPI terra = system.addPlanet("terra", star, "Terra", "terran", 0, 180, 3400, 365);
 		terra.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_terra"));
+		//terra.getSpec().setCloudTexture(Global.getSettings().getSpriteName("planets", "ssmod_terra_clouds"));
+		//terra.getSpec().setCloudColor([235,240,250,225]);
 		terra.applySpecChanges();
 
 			// Luna
-			PlanetAPI luna = system.addPlanet("luna", terra, "Luna","barren", 0,40, 350, 30);
+			PlanetAPI luna = system.addPlanet("luna", terra, "Luna","barren-bombarded", 0,40, 350, 30);
 
 		// Mars
-		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "desert", 0, 80, 5000, 500);
+		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "barren-desert", 0, 80, 5000, 500);
 		mars.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_mars"));
 		mars.applySpecChanges();
 
@@ -131,7 +133,7 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			PlanetAPI titan = system.addPlanet("titan", saturn, "Titan", "rocky_ice", 0, 55, 1000, 60);
 
 			// Saturn's Belt
-			system.addRingBand(saturn, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 630, 45, Terrain.RING, "Saturn's Belt");
+			system.addRingBand(saturn, "planets", "ssmod_saturn_belt", 256f, 2, Color.white, 256f, 630, 45, Terrain.RING, "Saturn's Belt");
 
 		// Giants Jump Point
 		JumpPointAPI giants_jump_point = Global.getFactory().createJumpPoint("sol_jump2", "Sol Jump-Point2");
