@@ -126,14 +126,14 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		saturn.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_saturn"));
 		saturn.applySpecChanges();
 
+			// Saturn's Belt
+			system.addRingBand(saturn, "planets", "ssmod_saturn_belt", 1024, 0, Color.white, 1024, 1000, 45, Terrain.RING, "Saturn's Belt");
+
 			// Enceladus
-			PlanetAPI enceladus = system.addPlanet("enceladus", saturn, "Enceladus", "cryovolcanic", 180, 10, 475, 30);
+			PlanetAPI enceladus = system.addPlanet("enceladus", saturn, "Enceladus", "cryovolcanic", 180, 10, 1550, 30);
 
 			// Titan
-			PlanetAPI titan = system.addPlanet("titan", saturn, "Titan", "rocky_ice", 0, 55, 1000, 60);
-
-			// Saturn's Belt
-			system.addRingBand(saturn, "planets", "ssmod_saturn_belt", 256f, 2, Color.white, 256f, 630, 45, Terrain.RING, "Saturn's Belt");
+			PlanetAPI titan = system.addPlanet("titan", saturn, "Titan", "rocky_ice", 0, 55, 2000, 60);
 
 		// Giants Jump Point
 		JumpPointAPI giants_jump_point = Global.getFactory().createJumpPoint("sol_jump2", "Sol Jump-Point2");
