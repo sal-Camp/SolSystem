@@ -1,16 +1,31 @@
 {
   "graphics":{
     "planets":{
-      "ssmod_mercury":"graphics/planets/ssmod_mercury.jpg",
-      "ssmod_venus":"graphics/planets/ssmod_venus.jpg",
-      "ssmod_terra":"graphics/planets/ssmod_terra.jpg",
-      "ssmod_terra_clouds": "graphics/planets/ssmod_terra_clouds.jpg",
-      "ssmod_mars":"graphics/planets/ssmod_mars.jpg",
-      "ssmod_jupiter":"graphics/planets/ssmod_jupiter.jpg",
-      "ssmod_saturn":"graphics/planets/ssmod_saturn.jpg",
-      "ssmod_saturn_belt":"graphics/planets/ssmod_saturn_belt.png",
-      "ssmod_uranus":"graphics/planets/ssmod_uranus.jpg",
-      "ssmod_neptune":"graphics/planets/ssmod_neptune.jpg"
+      "ssmod_mercury": "graphics/planets/ssmod_mercury.jpg",
+      "ssmod_venus": "graphics/planets/ssmod_venus.jpg",
+      "ssmod_terra": "graphics/planets/ssmod_terra.jpg",
+      "ssmod_mars": "graphics/planets/ssmod_mars.jpg",
+      "ssmod_ceres": "graphics/planets/ssmod_ceres.jpg",
+      "ssmod_jupiter": "graphics/planets/ssmod_jupiter.jpg",
+      "ssmod_saturn": "graphics/planets/ssmod_saturn.jpg",
+      "ssmod_uranus": "graphics/planets/ssmod_uranus.jpg",
+      "ssmod_neptune": "graphics/planets/ssmod_neptune.jpg",
+      "ssmod_pluto": "graphics/planets/ssmod_pluto.jpg"
+    },
+    "moons":{
+      "ssmod_luna": "graphics/moons/ssmod_luna.jpg",
+      "ssmod_io": "graphics/moons/ssmod_io.jpg",
+      "ssmod_europa": "graphics/moons/ssmod_europa.jpg",
+      "ssmod_ganymede": "graphics/moons/ssmod_ganymede.jpg",
+      "ssmod_callisto": "graphics/moons/ssmod_callisto.jpg",
+      "ssmod_enceladus": "graphics/moons/ssmod_enceladus.jpg",
+      "ssmod_titan": "graphics/moons/ssmod_titan.jpg",
+      "ssmod_oberon": "graphics/moons/ssmod_oberon.jpg",
+      "ssmod_triton": "graphics/moons/ssmod_triton.jpg",
+      "ssmod_charon": "graphics/moons/ssmod_triton.jpg"
+    },
+    "belts":{
+      "ssmod_saturn_belt": "graphics/planets/ssmod_saturn_belt.png"
     }
   }
 }

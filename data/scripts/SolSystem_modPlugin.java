@@ -67,7 +67,7 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		////////////////////////////////
 
 		// Mercury
-		PlanetAPI mercury = system.addPlanet("mercury", star, "Mercury", "rocky_metallic", 0, 60, 1500, 88);
+		PlanetAPI mercury = system.addPlanet("mercury", star, "Mercury", "barren-bombarded", 0, 60, 1500, 88);
 		mercury.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_mercury"));
 		mercury.applySpecChanges();
 
@@ -85,9 +85,11 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 			// Luna
 			PlanetAPI luna = system.addPlanet("luna", terra, "Luna","barren-bombarded", 0,40, 350, 30);
+			luna.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_luna"));
+			luna.applySpecChanges();
 
 		// Mars
-		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "barren-desert", 0, 80, 5000, 500);
+		PlanetAPI mars = system.addPlanet("mars", star, "Mars", "desert", 0, 80, 5000, 500);
 		mars.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_mars"));
 		mars.applySpecChanges();
 
@@ -97,6 +99,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 		// Ceres
 		PlanetAPI ceres = system.addPlanet("ceres", star, "Ceres", "barren", 0,10, 6000, 700);
+		ceres.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_ceres"));
+		ceres.applySpecChanges();
 
 		// Asteroid Belt Jump Point
 		JumpPointAPI asteroid_belt_jump_point = Global.getFactory().createJumpPoint("sol_jump1", "Sol Jump-Point1");
@@ -110,16 +114,27 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		jupiter.applySpecChanges();
 
 			// Io
-			PlanetAPI io = system.addPlanet("io", jupiter, "Io", "lava", 120,50, 625, 45);
+			PlanetAPI io = system.addPlanet("io", jupiter, "Io", "lava_minor", 120,50, 800, 45);
+			io.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_io"));
+			io.applySpecChanges();
 
 			// Europa
-			PlanetAPI europa = system.addPlanet("europa", jupiter, "Europa", "frozen", 0, 40, 1000, 30);
+			PlanetAPI europa = system.addPlanet("europa", jupiter, "Europa", "frozen", 0, 40, 1125, 30);
+			europa.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_europa"));
+			europa.applySpecChanges();
 
 			// Ganymede
-			PlanetAPI ganymede = system.addPlanet("ganymede", jupiter, "Ganymede", "rocky_ice", 240, 70, 1200, 60);
+			PlanetAPI ganymede = system.addPlanet("ganymede", jupiter, "Ganymede", "rocky_ice", 240, 70, 1400, 60);
+			ganymede.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_ganymede"));
+			ganymede.applySpecChanges();
+
+			// Callisto
+			PlanetAPI callisto = system.addPlanet("callisto", jupiter, "Callisto", "barren-bombarded", 160, 55, 1800, 75);
+			callisto.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_callisto"));
+			callisto.applySpecChanges();
 
 			// Jupiter's Belt
-			system.addRingBand(jupiter, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 800, 45, Terrain.RING, "Jupiter's Belt");
+			//system.addRingBand(jupiter, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 800, 45, Terrain.RING, "Jupiter's Belt");
 
 		// Saturn
 		PlanetAPI saturn = system.addPlanet("saturn", star, "Saturn", "gas_giant", 180, 425, 13000, 1200);
@@ -127,13 +142,18 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 		saturn.applySpecChanges();
 
 			// Saturn's Belt
-			system.addRingBand(saturn, "planets", "ssmod_saturn_belt", 1024, 0, Color.white, 1024, 1000, 45, Terrain.RING, "Saturn's Belt");
+			system.addRingBand(saturn, "belts", "ssmod_saturn_belt", 1024, 0, Color.white, 1024, 1000, 45, Terrain.RING, "Saturn's Belt");
+
 
 			// Enceladus
 			PlanetAPI enceladus = system.addPlanet("enceladus", saturn, "Enceladus", "cryovolcanic", 180, 10, 1550, 30);
+			enceladus.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_enceladus"));
+			enceladus.applySpecChanges();
 
 			// Titan
 			PlanetAPI titan = system.addPlanet("titan", saturn, "Titan", "rocky_ice", 0, 55, 2000, 60);
+			titan.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_titan"));
+			titan.applySpecChanges();
 
 		// Giants Jump Point
 		JumpPointAPI giants_jump_point = Global.getFactory().createJumpPoint("sol_jump2", "Sol Jump-Point2");
@@ -148,9 +168,11 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 			// Oberon
 			PlanetAPI oberon = system.addPlanet("oberon", uranus, "Oberon", "rocky_ice", 0, 40, 900, 60);
+			//oberon.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_oberon"));
+			//oberon.applySpecChanges();
 
 			// Uranus' Belt
-			system.addRingBand(uranus, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 550, 45, Terrain.RING, "Uranus' Belt");
+			//system.addRingBand(uranus, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 550, 45, Terrain.RING, "Uranus' Belt");
 
 		// Neptune
 		PlanetAPI neptune = system.addPlanet("neptune", star, "Neptune", "ice_giant", 270, 340, 21000, 1800);
@@ -159,14 +181,26 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 			// Triton
 			PlanetAPI triton = system.addPlanet("triton", neptune, "Triton", "cryovolcanic", 0, 50, 900, 60);
+			//triton.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_triton"));
+			//triton.applySpecChanges();
 
 			// Neptune's Belt
-			system.addRingBand(neptune, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 500, 45, Terrain.RING, "Neptune's Belt");
+			//system.addRingBand(neptune, "misc", "rings_ice0", 256f, 2, Color.white, 256f, 500, 45, Terrain.RING, "Neptune's Belt");
 
 		// Kuiper Belt
-		system.addAsteroidBelt(star, 1000, 25000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Kuiper Belt");
-		system.addRingBand(star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 25000, 305f, Terrain.ASTEROID_BELT,"Kuiper Belt1");
-		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white,256f,25000,295f,Terrain.ASTEROID_BELT,"Kuiper Belt2");
+		system.addAsteroidBelt(star, 1000, 23000, 1000, 150, 300, Terrain.ASTEROID_BELT, "Kuiper Belt");
+		system.addRingBand(star, "misc", "rings_dust0", 256f, 3, Color.white, 256f, 23000, 305f, Terrain.ASTEROID_BELT,"Kuiper Belt1");
+		system.addRingBand(star, "misc", "rings_asteroids0", 256f, 3, Color.white,256f,23000,295f,Terrain.ASTEROID_BELT,"Kuiper Belt2");
+
+		// Pluto
+		PlanetAPI pluto = system.addPlanet("pluto", star, "Pluto", "barren", 0, 20, 24500, 2000);
+		pluto.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "ssmod_pluto"));
+		pluto.applySpecChanges();
+
+			// Charon
+			PlanetAPI charon = system.addPlanet("charon", pluto, "Charon", "barren", 0, 14, 100, 30);
+			charon.getSpec().setTexture(Global.getSettings().getSpriteName("moons", "ssmod_charon"));
+			charon.applySpecChanges();
 
 		system.autogenerateHyperspaceJumpPoints(true,true);
 
@@ -212,7 +246,11 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			terra_market.setPrimaryEntity(terra);
 			terra.setMarket(terra_market);
 
-				// Luna Conditions
+				// Luna Conditions 175 Hazard Rating
+				MarketAPI luna_market = Global.getFactory().createMarket("luna_market", luna.getName(), 0);
+				luna_market.setPlanetConditionMarketOnly(true);
+				luna_market.addCondition(Conditions.NO_ATMOSPHERE);
+				luna_market.addCondition(Conditions.LOW_GRAVITY);
 
 			// Mars Conditions 125 Hazard Rating
 			MarketAPI  mars_market = Global.getFactory().createMarket("mars_market", mars.getName(), 0);
@@ -265,6 +303,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 				ganymede_market.addCondition(Conditions.VOLATILES_ABUNDANT);
 				ganymede_market.setPrimaryEntity(ganymede);
 				ganymede.setMarket(ganymede_market);
+
+				// Callisto
 
 			// Saturn Conditions
 
