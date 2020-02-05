@@ -1,3 +1,39 @@
+Version 0.2.3 - TBD
+- Added Callisto (Barren-Bombarded)
+    Conditions:
+        Cold
+        Poor Light
+        Low Gravity
+        No Atmosphere
+        Abundant Ore
+        Abundant Rare Ore
+        Abundant Volatiles
+
+- Added Pluto (Barren), and Charon (Barren)
+- Every planet and moon have new textures except for Oberon & Triton. (Credit to Alexzzz for showing me how)
+- Some planet type changes:
+    Venus: Lava -> Toxic
+    Mercury: Rocky-Metallic -> Barren-Bombarded
+    Luna: Barren -> Barren-Bombarded
+- Saturn now has more visually accurate rings
+- Temporarily removed the belts from Jupiter, Uranus, and Neptune pending replacement with better visuals
+- Condition Changes:
+    Mercury:
+        Removed Meteor Impacts
+        Added Thin Atmosphere
+        Added Irradiated
+    Venus:
+        Removed Extreme Tectonic Activity
+        Added Tectonic Activity
+        Added Irradiated
+    Luna:
+        Added no_atmosphere
+        Added low_gravity
+    Io:
+        Removed Extreme Tectonic Activity
+        Added Tectonic Activity
+        Added Poor Light
+
 Version 0.2.2 - 01/21/2020
 - Reduced number of asteroids in both belts. They were causing a large performance hit.
 
