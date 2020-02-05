@@ -213,7 +213,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			MarketAPI mercury_market = Global.getFactory().createMarket("mercury_market", mercury.getName(), 0);
 			mercury_market.setPlanetConditionMarketOnly(true);
 			mercury_market.addCondition(Conditions.HOT);
-			mercury_market.addCondition(Conditions.METEOR_IMPACTS);
+			mercury_market.addCondition(Conditions.IRRADIATED);
+			mercury_market.addCondition(Conditions.THIN_ATMOSPHERE);
 			mercury_market.addCondition(Conditions.TOXIC_ATMOSPHERE);
 			mercury_market.addCondition(Conditions.LOW_GRAVITY);
 			mercury_market.addCondition(Conditions.ORE_ULTRARICH);
@@ -225,7 +226,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			MarketAPI venus_market = Global.getFactory().createMarket("venus_market", venus.getName(), 0);
 			venus_market.setPlanetConditionMarketOnly(true);
 			venus_market.addCondition(Conditions.VERY_HOT);
-			venus_market.addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
+			venus_market.addCondition(Conditions.IRRADIATED);
+			venus_market.addCondition(Conditions.TECTONIC_ACTIVITY);
 			venus_market.addCondition(Conditions.DENSE_ATMOSPHERE);
 			venus_market.addCondition(Conditions.ORE_ULTRARICH);
 			venus_market.addCondition(Conditions.RARE_ORE_ULTRARICH);
@@ -251,6 +253,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 				luna_market.setPlanetConditionMarketOnly(true);
 				luna_market.addCondition(Conditions.NO_ATMOSPHERE);
 				luna_market.addCondition(Conditions.LOW_GRAVITY);
+				luna_market.setPrimaryEntity(luna);
+				luna.setMarket(luna_market);
 
 			// Mars Conditions 125 Hazard Rating
 			MarketAPI  mars_market = Global.getFactory().createMarket("mars_market", mars.getName(), 0);
@@ -270,7 +274,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 				// Io Conditions 225 Hazard Rating
 				MarketAPI io_market = Global.getFactory().createMarket("io_market", io.getName(), 0);
 				io_market.setPlanetConditionMarketOnly(true);
-				io_market.addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
+				io_market.addCondition(Conditions.TECTONIC_ACTIVITY);
+				io_market.addCondition(Conditions.POOR_LIGHT);
 				io_market.addCondition(Conditions.HOT);
 				io_market.addCondition(Conditions.THIN_ATMOSPHERE);
 				io_market.addCondition(Conditions.LOW_GRAVITY);
@@ -304,7 +309,19 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 				ganymede_market.setPrimaryEntity(ganymede);
 				ganymede.setMarket(ganymede_market);
 
-				// Callisto
+				// Callisto 225 Hazard Rating
+				MarketAPI callisto_market = Global.getFactory().createMarket("callisto_market", callisto.getName(), 0);
+				callisto_market.setPlanetConditionMarketOnly(true);
+				callisto_market.addCondition(Conditions.COLD);
+				callisto_market.addCondition(Conditions.POOR_LIGHT);
+				callisto_market.addCondition(Conditions.LOW_GRAVITY);
+				callisto_market.addCondition(Conditions.NO_ATMOSPHERE);
+				callisto_market.addCondition(Conditions.ORE_ABUNDANT);
+				callisto_market.addCondition(Conditions.RARE_ORE_ABUNDANT);
+				callisto_market.addCondition(Conditions.VOLATILES_ABUNDANT);
+				callisto_market.setPrimaryEntity(callisto);
+				callisto.setMarket(callisto_market);
+
 
 			// Saturn Conditions
 
@@ -339,7 +356,7 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 
 			// Neptune Conditions
 
-				// Triton Conditions 225
+				// Triton Conditions
 
 		}
     }
