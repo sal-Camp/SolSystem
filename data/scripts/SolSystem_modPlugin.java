@@ -3,6 +3,7 @@ package data.scripts;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
+import com.fs.starfarer.api.impl.campaign.econ.AbandonedStation;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
