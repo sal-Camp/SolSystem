@@ -27,8 +27,8 @@ public class SolSystem_modPlugin extends BaseModPlugin {
 			"sol",
 			"star_yellow",
 			1000,
-			8500,
-			-10500,
+			15000,
+			-10500, //-10500
 			500);
 
 		////////////////////////

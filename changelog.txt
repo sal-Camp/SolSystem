@@ -1,3 +1,6 @@
+Version 0.2.4
+- Updated mod to work with StarSector 0.95a-RC12
+
 Version 0.2.3 - TBD
 - Added Callisto (Barren-Bombarded)
     Conditions:
