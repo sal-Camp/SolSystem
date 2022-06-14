@@ -3,6 +3,6 @@
 	"name":"Sol System", 
 	"version":"0.2.2",
 	"description":"Adds the Sol System to the core worlds, full of habitable planets. Pretty much overpowered.",
-	"gameVersion":"0.9.1a",
+	"gameVersion":"0.95.1a-RC6",
 	"modPlugin":"data.scripts.SolSystem_modPlugin"
 }
